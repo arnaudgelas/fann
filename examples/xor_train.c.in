@@ -48,7 +48,7 @@ int main()
 	printf("Creating network.\n");
 	ann = fann_create_standard(num_layers, num_input, num_neurons_hidden, num_output);
 
-	data = fann_read_train_from_file("xor.data");
+	data = fann_read_train_from_file("@FANN_SOURCE_DIR@/examples/xor.data");
 
 	fann_set_activation_steepness_hidden(ann, 1);
 	fann_set_activation_steepness_output(ann, 1);

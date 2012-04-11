@@ -9,7 +9,7 @@ SET(CMAKE_MODULE_PATH
 SET(VERSION 2.2.0)
 
 INCLUDE(DefineInstallationPaths)
-
+include( CTest )
 
 configure_file( ${CMAKE_SOURCE_DIR}/cmake/config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/src/include/config.h )
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_BINARY_DIR}/src/include/)

@@ -52,7 +52,7 @@ int main()
 #ifdef FIXEDFANN
 	data = fann_read_train_from_file("xor_fixed.data");
 #else
-	data = fann_read_train_from_file("xor.data");
+	data = fann_read_train_from_file("@FANN_SOURCE_DIR@/examples/xor.data");
 #endif
 
 	for(i = 0; i < fann_length_train_data(data); i++)
