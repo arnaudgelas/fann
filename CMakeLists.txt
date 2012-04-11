@@ -22,7 +22,13 @@ SET(PKGCONFIG_INSTALL_DIR /lib/pkgconfig)
 
 INSTALL_FILES( ${PKGCONFIG_INSTALL_DIR} FILES  fann.pc )
 
-ADD_SUBDIRECTORY( src ) 
+ADD_SUBDIRECTORY( src )
+
+option( BUILD_EXAMPLES "Build the examples" OFF )
+
+if( ${BUILD_EXAMPLES} )
+  ADD_SUBDIRECTORY( examples )
+endif()
 
 ################# cpack ################
 
