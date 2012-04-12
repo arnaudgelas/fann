@@ -58,7 +58,7 @@ int main()
 	{
 		fann_test(ann, test_data->input[i], test_data->output[i]);
 	}
-	
+
 	printf("MSE error on test data: %f\n", fann_get_MSE(ann));
 
 	printf("Saving network.\n");
